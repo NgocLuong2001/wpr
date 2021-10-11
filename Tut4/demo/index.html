@@ -11,7 +11,7 @@
 
     html {
       font-family: 'Open Sans', sans-serif;
-      background: url(pattern.png);
+      background: url(media/pattern.png);
     }
 
     body {
@@ -108,7 +108,7 @@
 
   <main>
     <article>
-      <iframe width="400" src="https://www.youtube.com/embed/ojcNcvb1olg" allowfullscreen></iframe>
+      <iframe width="400" height="225" src="https://www.youtube.com/embed/ojcNcvb1olg" allowfullscreen></iframe>
 
       <h2>Rocking the free web</h2>
 
@@ -123,27 +123,33 @@
     </article>
 
     <div class="further-info">
-      <a>
+      <a href="https://www.mozilla.org/en-US/firefox/new/">
       <img srcset="media/firefox_logo-only_RGB120.png 120w,
-      firefox_logo-only_RGB600 600w" sizes="(max-width: 500px) 120px,
+      media/firefox_logo-only_RGB600.png 600w" sizes="(max-width: 500px) 120px,
                       400px" src="media/firefox_logo-only_RGB120.png" alt="Download Firefox">
       </a>
-      <img>
-      </a>
       <a href="https://www.mozilla.org/">
-        <img>
+          <img srcset="media/mozilla-dinosaur-head120.png 120w,
+                       media/mozilla-dinosaur-head600.png 600w" sizes="(max-width: 500px) 120px,
+                      400px" src="media/mozilla-dinosaur-head120.png" alt="Learn more about Mozilla">
+        </a>
       </a>
       <a href="https://addons.mozilla.org/">
-        <img>
+        <img srcset="media/firefox-addons120.jpg 120w,
+                     media/firefox-addons600.jpg 600w" sizes="(max-width: 500px) 120px,
+                      400px" src="media/firefox-addons120.jpg" alt="Customize Firefox with Add-on">
       </a>
       <a href="https://developer.mozilla.org/en-US/">
-        <img>
+        <img src="media/mdn600.svg" alt="Learn web development with MDN">
       </a>
       <div class="clearfix"></div>
     </div>
 
     <div class="red-panda">
-      <!-- insert picture element -->
+      <picture>
+        <source media="(max-width: 600px)" srcset="media/red-panda.jpg">
+        <img src="media/red-panda1200.jpg" alt="a red panda">
+      </picture>
     </div>
 
   </main>
