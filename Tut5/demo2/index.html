@@ -1,0 +1,98 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Exercise4</title>
+	<meta name="generator" content="LibreOffice 7.0.4.2 (Linux)" />
+	<meta name="created" content="00:00:00" />
+	<meta name="changed" content="00:00:00" />
+	<link rel="stylesheet" href="exercise4.css">
+	<style type="text/css">
+		@page {
+			size: 8.27in 11.69in;
+			margin: 0.79in
+		}
+
+		p {
+			margin-bottom: 0.1in;
+			line-height: 115%;
+			background: transparent
+		}
+
+		pre {
+			font-family: "Liberation Mono", monospace;
+			font-size: 10pt;
+			background: transparent
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<h1  id="title" class="text-center">Survey Form</h1>
+	</header>
+	<main>
+		<div class="containter">
+			<form action="/action_page.php" id="survey">
+					<p id="description" class="description text-center">Let us know how we can improve freeCodeCamp</p>
+					<div class = "form-item">
+					<label for="name">* Name:</label>
+					<input type="text" id="name" name="name" placeholder="Enter your name" required>
+					<label for="email">* Email:</label>
+					<input type="email" id="email" name="email" placeholder="Enter your Email" required>
+					<label for="age">* Age:</label>
+					<input type="number" id="age" name="age" min="1" max="150" placeholder="Age" required>
+
+					<label for="Student">Which option best describes your current role:</label>
+					<select name="Student" id="student">
+						<option value="Student">Student</option>
+						<option value="Option2">Option2</option>
+						<option value="Option3">Option3</option>
+						<option value="Option4">Option4</option>
+					</select>
+
+					<label for="radio">How likely is that you would recommend freeCodeCamp to a friend?</label>
+				<div id="radio">
+					<input type="radio" id="definitely" name="recommend" value="Definitely">
+					<label for="definitely">Definitely</label><br>
+					<input type="radio" id="maybe" name="recommend" value="Maybe">
+					<label for="maybe">Maybe</label><br>
+					<input type="radio" id="notsure" name="recommend" value="Not sure">
+					<label for="notsure">Not sure</label><br> 
+				</div>
+				
+					<label for="like">What do you like most in FCC:</label>
+					<select name="like" id="like">
+						<option value="Select an option">Select an option</option>
+						<option value="Option2">Option2</option>
+						<option value="Option3">Option3</option>
+						<option value="Option4">Option4</option>
+					</select>
+
+					<label for = "checkboxes">Things that should be improved in the future:</label>
+                    <div id="checkboxes">
+					<label><input type="radio" name="frontend"> Front-end Projects</label><br>
+					<label><input type="radio" name="backend"> Back-end Projects</label><br>
+					<label><input type="radio" name="data"> Data visualization</label><br>
+					<label><input type="radio" name="opensource"> Open Source Community</label><br>
+					<label><input type="radio" name="Gitterhelp"> Gitter help roams</label><br>
+					<label><input type="radio" name="videos">Videos</label><br>
+					<label><input type="radio" name="city"> City meetups</label><br>
+					<label><input type="radio" name="wiki">Wiki</label><br>
+					<label><input type="radio" name="forum"> Forum</label><br>
+					<label><input type="radio" name="additional">Additional Courses</label><br>
+				</div>
+
+					<label for="comment">Any comments or Suggestion?</label>
+					<textarea id="comment" name="comment" rows="4" cols="50"
+placeholder= "Enter your comment here...">
+  </textarea>
+				
+  <button id="submit" type="submit">Submit</button>
+		</div>
+		</form>
+		</div>
+		</main>
+	</body>
+</html>
