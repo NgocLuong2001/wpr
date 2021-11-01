@@ -2,6 +2,9 @@
 
 * {
     box-sizing: border-box;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    word-spacing: 1.5px;
   }
   
   body {
@@ -10,7 +13,7 @@
     max-width: 1400px;
   }
   a[href*="http"] {
-    background: url('icon/external-link-52.png') no-repeat 100% 0;
+    background: url(https://github.com/mdn/learning-area/blob/master/css/styling-text/typesetting-a-homepage-start/external-link-52.png?raw=true) no-repeat 100% 0;
     background-size: 18px 18px;
     padding-right: 20px;
 }
@@ -64,11 +67,8 @@
   p, a, ul, ol, li {
     font-family: Open Sans;
     font-size: 10px;
-    line-height: 1.5;
-    letter-spacing: 2px;
-    word-spacing: 2px;
   }
-  p{
+ h2 + p{
     text-indent: 20px;
   }
   a:visited {
@@ -86,4 +86,16 @@
   }
   a:link{
     color:#a66;
+    text-decoration: underline;
+    outline: none;
+  }
+  aside ul {
+    list-style-type: square;
+  }
+  nav li {
+    list-style-type: none;
+    border: 1px solid #a66;
+    padding: 5px 15px 5px 15px;
+    text-align: center;
+    margin: 20px;
   }
