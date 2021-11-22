@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap 5</title>
+  <link rel="stylesheet" href="assets/bootstrap-513/css/bootstrap.min.css">
+</head>
+<body>
+  <form class="p-4 m-4" >
+  <div class="form-group">
+    <label for="firstName">First name</label>
+    <input type="text" class="form-control" id="firstName" required>
+    <label for="lastName">Last name</label>
+    <input type="text" class="form-control" id="lastName" required>
+  </div>
+  <div class="form-check form-check-inline mt-2">
+    <input class="form-check-input" type="radio" name="gender" id="male" required>
+    <label class="form-check-label" for="male">Male</label>
+  </div>
+  <div class="form-check form-check-inline mt-2">
+    <input class="form-check-input" type="radio" name="gender" id="female" required>
+    <label class="form-check-label" for="female">Female</label>
+  </div>
+  <div id="date-picker" class="md-form md-outline input-with-post-icon datepicker" inline="true">
+    <input placeholder="mm/dd/yyyy" type="date" id="date" class="form-control">
+    <i class="fas fa-calendar input-prefix"></i>
+  </div>
+  <button type="submit" class="btn btn-primary mt-2">Submit</button>
+</form>
+</body>
+</html>

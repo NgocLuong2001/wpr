@@ -1,0 +1,42 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+#calculator{
+    width: 310px;
+    height: 390px;
+    background-color: #eeeeee;
+    margin: 0 auto;
+    top: 20px;
+    position: relative;
+    border: 4px solid black;
+}
+#result{
+    height: 40px;
+    width: 290px;
+    box-shadow: 10px 10px 5px #aaaaaa;
+    margin-bottom: 10px;
+}
+#output {
+    text-align: right;
+    height: 10px;
+    margin: 10px 20px;
+    font-size: 30px;
+}
+.operator, .number {
+    width: 55px;
+    height: 55px;
+    margin: 11px;
+    float: left;
+    font-size: 20px;
+    color: blue;
+    font-weight: bold;
+    border: 2px solid black;
+    background-color: #eaedef;
+    cursor: pointer;
+}
+.operator:active, number:active {
+    font-size: 15px;
+}
+.operator:focus, .number:focus {
+    outline: 0;
+}
