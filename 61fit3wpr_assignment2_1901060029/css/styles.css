@@ -1,0 +1,56 @@
+body{
+    font-family: 'Open Sans';font-size: 22px;
+}
+.header{
+    background: url(/image/iu-header.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 1em;
+    width: 100vw;
+    height: 100vh;
+}
+.header .container .header-info .title {
+    font-size: 38px;
+    font-style: normal;
+    font-family: 'Poppins', sans-serif;
+}
+.header-image{
+    float: left;
+    width: 20%;
+    margin-top: 3em;
+    padding-right: 3em;
+    text-align: right;
+}
+.header-info{
+    float:right;
+    width: 67%;
+    margin-top:4em;
+}
+button{
+    background-color:#E06867;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 6px;
+    padding: .75em 1.25em;
+    font-family: inherit;
+    font-size: 1em;
+    font-weight: bold;
+}
+.description {
+    width: 100%;
+    padding: 1em 0;
+    font-size: 1.25em;
+    background-color: white;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    clear: both;
+}
+.container::after{
+    content:"";
+    display: block;
+    clear:both;
+}
