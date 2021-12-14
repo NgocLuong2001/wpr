@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@200;300;600;700&display=swap');
+:root{
+    --purple: #822faf;
+    --pink:#ea698b;
+    --gradient:linear-gradient(90deg, var(--purple), var(--pink));
+}
+*{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border:none;
+    text-transform: capitalize;
+    line-height: 2.5rem;
+}
+*::selection{
+    background:var(--pink);
+    color:#fff;
+}
+html{
+    font-size: 80%;
+    overflow-x: hidden;
+}
+body{
+    background:#f9f9f9;
+}
+section{
+    min-height: 100vh;
+    padding:0 9%;
+    margin-top: 7.5rem;
+}
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding:.8rem 3rem;
+    border-radius: 5rem;
+    background: var(--gradient);
+    font-size: 1.7rem;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+.btn:hover{
+    animation: bounce 1s linear;
+}
+@keyframes bounce {
+    20%,50%,80%,to{
+        transform: translateY(0);
+    }
+    40%{
+        transform: translateY(-30px);
+    }
+    70%{
+        transform: translateY(-15px);
+    }
+    90%{
+        transform: translateY(-4px);
+    }
+}
+.heading{
+    text-align: center;
+    background:var(--gradient);
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 3.5rem;
+    padding:3%;
+}
+header{
+    position: fixed;
+    top:0; left:0;
+    width:100%;
+    background:#fff;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    padding:2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index:1000;
+}
+header .navbar a{
+    font-size: 1.7rem;
+    margin-left: 1rem;
+    color: var(--pink);
+    padding: 10px 5px;
+    border-radius: 30px;
+}
+header .navbar a:hover{
+    border: 3px solid rgb(206, 91, 206);
+    cursor: pointer;
+    color: var(--purple);
+}
+header .navbar a:nth-child(6){
+    background: var(--gradient);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+header input{
+    display: none;
+}
+header label{
+    font-size: 3rem;
+    color: var(--pink);
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+}
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(/image/model-romand1.jpg);
+    background-size: cover;
+    background-position: right center;
+}
+.home .content h1{
+    font-size: 3.5rem;
+    color:rgb(255, 255, 255);
+}
+.home .content h3{
+    margin-top: 20px;
+    color: var(--purple);
+    font-size: 2rem;
+}
+.home .content p{
+    font-size: 1.5rem;
+    color: rgb(41, 39, 39);
+    padding: 1rem 0;
+    width: 50%;
+}
+.home .content span{
+    font-size:2.5rem;
+    color: var(--pink);
+}
+.description{
+    min-height: 50vh;
+}
+.description p, li{
+    font-size: 1.5rem;
+    line-height: 2.5;
+}
+.testimonials .box-container{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    flex-wrap: wrap;
+    background-color: #EAEBEA;
+}
+.testimonials .box-container .box{
+    background:#fff;
+    margin: 1rem;
+    padding: 1rem;
+    border:.1rem solid rgba(0,0,0,.2);
+    box-shadow: e .5rem 1rem rgba(0,0,0,.1);
+    text-align: center;
+    position: relative;
+    border-radius: .5rem;
+    flex: 1 1 30rem;
+}
+.testimonials .box-container .box .fa-quote-right{
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    font-size: 5rem;
+    color: var(--pink);
+    opacity: .3;
+}
+.testimonials .box-container .box .user img{
+    object-fit: cover;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    margin-top: 30px;
+}
+.testimonials .box-container .box .user h3{
+    color:var(--pink);
+    font-size: 2rem;
+}
+.testimonials .box-container .box .user .stars i{
+    color: var(--purple);
+    font-size: 1.5rem;
+    padding: 10px 0;
+}
+.testimonials .box-container .box .user .comment {
+    color: #666;
+    font-size: 1.2rem;
+}
+.pricing .box-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.pricing .box-container .box{
+    flex:1 1 30rem;
+    background:#fff;
+    border-radius: .5rem;
+    border:.1rem solid rgba(0,0,0,.2);
+    box-shadow:0.5rem 1rem rgba(0,0,0,.1);
+    margin:10px;
+    padding:3rem 2rem;
+    border-radius: .5rem;
+    transition: .2s linear;
+    text-align: center;
+}
+.pricing .box-container img{
+    height: 30rem;
+}
+.pricing .box-container h3{
+    font-size: 2rem;
+    color: #333;
+    padding-top: 1rem;
+}
+.pricing .box-container p{
+    font-size: 1.2rem;
+    color: #666;
+    padding-top: 1rem 0;
+}
+.social-media .content{
+    text-align: center;
+}
+.social-media .content h3{
+    font-size: 2rem;
+    color: #333;
+}
+.social-media .content .icon i{
+    color: var(--pink);
+    font-size: 4rem;
+    padding: 30px;
+}
+.social-media .content .icon i:hover{
+    -ms-transform: scale(1.5,1.5); 
+    transform: scale(1.5,1.5);
+    cursor: pointer;
+}
+@media (max-width:1200px){
+    html{
+        font-size: 55%;
+    }
+}
+@media (max-width:991px){
+    section{
+    padding:0 3%;
+    margin-top: 7.5rem;
+}
+@media (max-width: 857px){
+    header label{
+        visibility: visible;
+        opacity:1;
+    }
+    header .navbar{
+        position: absolute;
+        top:100%; 
+        left: 0;
+        width:100%;
+        background:#fff;
+        padding:2rem;
+        border-top: .1rem solid rgba(0,0,0,.2);
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.1) ;
+        transform-origin: top;
+        transform: scaleY(0);
+        opacity: 0;
+}
+    header .navbar a{
+        display:block;
+        margin: 2rem 0;
+        font-size: 15px;
+    }
+    header input:checked ~ .navbar{
+        transform: scaleY(1);
+        opacity: 1;
+}
+}
+@media (max-width:450px){
+    html{
+        font-size: 45%;
+    }
+    .home{
+        background-size: 450px;
+        background-repeat: no-repeat;
+    }
+    .home .content {
+        background-image: url(/image/transparent-background.png);
+        padding: 0px 0px 10px 10px;
+        font-weight: bold;
+        background-size: cover;
+    }
+    .home .content h1{
+        color: var(--pink);
+        opacity: 1;
+        text-align: center;
+    }
+    .home .content h3{
+        font-size: 3.6rem;
+        text-align: center;
+    }
+    .home .content p{
+        font-size: 1.5rem;
+        text-align: center;
+        width: 100%;
+    }
+    .home .btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+}

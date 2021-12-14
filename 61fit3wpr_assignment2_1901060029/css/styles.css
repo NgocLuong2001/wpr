@@ -1,48 +1,65 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
 body{
     font-family: 'Open Sans';font-size: 22px;
 }
 .header{
     background: url(/image/iu-header.jpg);
     background-attachment: fixed;
-    background-position: center center;
+    background-position: right center;
     background-size: cover;
-    background-repeat: no-repeat;
     padding-bottom: 1em;
-    width: 100vw;
     height: 100vh;
+    width: 100vw;
 }
 .header .container .header-info .title {
     font-size: 38px;
     font-style: normal;
     font-family: 'Poppins', sans-serif;
 }
-.header-image{
+hr {
+    max-width: 100%;
+    width: 110px;
+    border-top-width: 9px;
+    border-top-style: solid;
+    border-top-color: #000000;
+    text-align: left;
+    margin: 0;
+    display: inline-block;
+}
+/* .header-image{
     float: left;
     width: 20%;
     margin-top: 3em;
     padding-right: 3em;
     text-align: right;
-}
+} */
 .header-info{
-    float:right;
-    width: 67%;
-    margin-top:4em;
+    float:left;
+    width: 50%;
+    margin-top:5em;
 }
-button{
+.surtitle {
+    font-weight: bold;
+    font-variant: small-caps;
+}
+.btn{
     background-color:#E06867;
     color: #FFFFFF;
     border: none;
     border-radius: 6px;
     padding: .75em 1.25em;
-    font-family: inherit;
     font-size: 1em;
     font-weight: bold;
+    margin: 0 600px 0 10px ;
 }
 .description {
-    width: 100%;
     padding: 1em 0;
     font-size: 1.25em;
-    background-color: white;
 }
 .container{
     max-width: 1200px;
