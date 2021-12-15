@@ -111,7 +111,7 @@ header label{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url(/image/model-romand1.jpg);
+    background: url('../image/model-romand1.jpg');
     background-size: cover;
     background-position: right center;
 }
@@ -235,6 +235,56 @@ header label{
     transform: scale(1.5,1.5);
     cursor: pointer;
 }
+footer{
+    padding-top: 3rem;
+    background: var(--gradient);
+}
+footer .box-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+footer .box-container .box{
+    flex: 1 1 20%;
+    margin: 2rem;
+}
+footer .box-container .box input{
+    width: 350px;
+    padding: 5px;
+}
+footer .box-container .box h3{
+    font-size: 25px;
+    padding: 10px 3px;
+    color: black;
+}
+footer .box-container .box a{
+    display: block;
+    color:#EAEBEA;
+    font-size: 20px;
+}
+footer .box-container .box a:hover{
+    -ms-transform: scaleY(1.5); 
+    transform: scaleY(1.5);
+    cursor: pointer;
+}
+footer .box-container .box .info{
+    display: flex;
+    align-items: center;
+}
+footer .box-container .box .info i{
+    margin:.6rem 0;
+    margin-right: 1rem;
+    border-radius: 50%;
+    background:#fff;
+    color:var(--gradient);
+    font-size: 1.5rem;
+    height:40px;
+    width:40px;
+    line-height: 2.6rem;
+    text-align: center;
+}
+footer .box-container .box .info p{
+    font-size: 20px;
+}
 @media (max-width:1200px){
     html{
         font-size: 55%;
@@ -282,7 +332,7 @@ header label{
         background-repeat: no-repeat;
     }
     .home .content {
-        background-image: url(/image/transparent-background.png);
+        background-image: url('../image/transparent-background.png');
         padding: 0px 0px 10px 10px;
         font-weight: bold;
         background-size: cover;
