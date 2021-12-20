@@ -274,13 +274,9 @@ footer .box-container .box .info{
 footer .box-container .box .info i{
     margin:.6rem 0;
     margin-right: 1rem;
-    border-radius: 50%;
-    background:#fff;
-    color:var(--gradient);
-    font-size: 15px;
     height:40px;
     width:40px;
-    line-height: 2.6rem;
+    line-height: 2.5rem;
     text-align: center;
 }
 footer .box-container .box .info p{
