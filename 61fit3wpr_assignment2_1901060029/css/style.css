@@ -21,6 +21,7 @@
 html{
     font-size: 80%;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 body{
     background:#f9f9f9;
