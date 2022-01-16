@@ -1,0 +1,69 @@
+.slider
+{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background: #000;
+}
+.slider .imgBox
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    z-index: 1;
+}
+.slider .imgBox img
+{
+    position: absolute;
+    top: 0;
+    Left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.slider .imgBx .content
+{
+    position: relative;
+    text-align: center;
+    max-width: 800px;
+}
+.slider .imgBx .content h2
+{
+    font-size: 6em;
+    Line-height: lem;
+    color: #fff;
+}
+.slider .imgBx .content p {
+    font-size: 1.1rem;
+    color: #fff;
+}
+.slider .imgBox .content a
+{
+    position: relative;
+    display: inline-block;
+    background: #fff;
+    padding: 10px 30px;
+    color: #111;
+    font-weight: 500;
+    margin-top: 20px;
+    text-decoration: none;
+}
+.slider input[type="radio"]
+{
+    position: relative;
+    z-index: 1000;
+    margin: 5px;
+    margin-bottom: 40px;
+    outline: none;
+    cursor:pointer;
+}
